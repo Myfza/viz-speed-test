@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #000000;
+  color: #ffffff;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Glass morphism effect with black/orange theme */
+.glass-effect {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 102, 0, 0.2);
+}
+
+.glass-effect-orange {
+  background: rgba(255, 102, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 102, 0, 0.3);
+}
+
+/* Particle container */
+.particle-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Individual particle styles */
+.particle {
+  position: absolute;
+  background: #ff6600;
+  border-radius: 50%;
+  opacity: 0.6;
+  filter: blur(0.5px);
+}
+
+.particle-small {
+  width: 2px;
+  height: 2px;
+  animation: particle-float 6s ease-in-out infinite;
+}
+
+.particle-medium {
+  width: 4px;
+  height: 4px;
+  animation: particle-drift 8s linear infinite;
+}
+
+.particle-large {
+  width: 6px;
+  height: 6px;
+  animation: particle-float 10s ease-in-out infinite;
+}
+
+/* Orange glow text effect */
+.orange-glow-text {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ff6600, 0 0 20px #ff6600;
+}
+
+/* Hover effects */
+.hover-orange-glow:hover {
+  box-shadow: 0 0 30px #ff6600;
+  border-color: #ff6600;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* Gradient backgrounds */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #ff6600 100%);
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(45deg, #ff6600 0%, #000000 50%, #1a1a1a 100%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff6600;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8533;
+}
+
+/* Responsive text sizing */
+@media (max-width: 768px) {
+  .text-responsive-xl {
+    font-size: 1.75rem;
+  }
+  
+  .text-responsive-lg {
+    font-size: 1.25rem;
+  }
+  
+  /* Mobile spacing improvements */
+  .mobile-spacing {
+    margin-bottom: 2rem;
+  }
+  
+  .mobile-button-spacing {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .text-responsive-xl {
+    font-size: 3rem;
+  }
+  
+  .text-responsive-lg {
+    font-size: 2rem;
+  }
+}
+
+/* Animation delays for staggered effects */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-700 { animation-delay: 0.7s; }

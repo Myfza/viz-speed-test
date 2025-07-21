@@ -13,6 +13,9 @@ Designed to provide real-time feedback on your connection speed — with visual 
 - 🚀 **Real-Time Speed Testing**  
   Measure your internet's download, upload, and ping with accurate metrics.
 
+  - 🌍 **Multilingual Interface**  
+  Automatically detects your browser language or lets you manually choose from supported languages (e.g., English, Indonesian, etc).
+
 - 🎨 **Futuristic UI**  
   Neon-style dark theme interface for an immersive testing experience.
 

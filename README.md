@@ -54,3 +54,15 @@ npm install
 
 # Start the dev server
 npm run dev
+
+```
+
+## 🤝 Contributions
+
+Pull requests are welcome! Feel free to fork and help improve this project!
+
+## 🧑‍💻 Developer
+
+Made by **Muhammad Yusuf Aditiya (Myfza)**  
+🔗 [GitHub](https://github.com/Myfza) | [LinkedIn](https://www.linkedin.com/in/myfza)
+
